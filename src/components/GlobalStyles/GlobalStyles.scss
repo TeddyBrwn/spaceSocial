@@ -1,0 +1,37 @@
+@import 'normalize.css';
+
+:root{
+    padding:0;
+    margin:0;
+    --primary-color:#000;
+    --font-size-s:1rem;
+    --font-size-m:1.4rem;
+    --font-size-l:1.6rem;
+    --vh:100vh;
+    --vw:100vw;
+    --fw:bold;
+    --uc:uppercase;
+    --lc:lowercase;
+}
+
+html{
+    font-size:62.5%;
+}
+
+body{
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+    font-family: "Helvetica Neue",Helvetica,
+}
+button,input,[tabindex]{
+    outline: none;
+    border: none;
+}
+a[href]{
+    color:var(--primary-color);
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}

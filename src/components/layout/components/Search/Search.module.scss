@@ -1,0 +1,41 @@
+.c-popin-header{
+    padding: 3rem;
+}
+
+
+//close Poping
+.close-Popin{
+    top: 0;
+    right: 0;
+    position: absolute;
+    cursor: pointer;
+    padding:3rem;
+
+    background-color: transparent;
+    
+    
+}
+//form
+.c-topsearch--popin__result{
+    display: flex;
+    border-bottom: 2px solid var(--primary-color);
+    width:  96%;
+}
+
+//input
+.c-form__input{
+    width: 100%;
+    font-weight: var(--fw);
+    font-size: var(--font-size-l);
+    color:#000;
+}
+//button clear
+.c-topsearch--popin__clear{
+    cursor: pointer;
+    background-color:transparent;
+    // border-bottom: 2px solid var(--primary-color);
+    font-weight: var(--fw);
+    font-size: var(--font-size-s);
+    
+    
+}

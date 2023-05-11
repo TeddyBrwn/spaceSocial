@@ -1,0 +1,35 @@
+.l-header-aside__nav{
+   
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+//wrapper aside
+.l-header__icon{
+    display: flex;
+    padding: 3rem;
+    flex-direction: column;
+}
+
+//icon search
+.c-topsearch{
+    width: 100%;
+}
+.c-topsearch__button{
+    background-color: transparent;
+    margin-bottom:3rem;
+    cursor: pointer;
+
+}
+.c-icon--search{
+    margin-bottom: 1.6rem;
+}
+//menu items
+.l-header_menuItems{
+    font-size:var(--font-size-s);
+    text-transform:var(--uc);
+    &:hover{
+        font-weight: var(--fw);
+    }
+}
+

@@ -1,0 +1,30 @@
+//wrapper
+.l-header__nav{
+    // display:none;
+    display: flex;
+    position: absolute;
+    top:0;
+    left:0;
+}
+//logo
+.l-header__logo img{
+    display: flex;
+    width: 20rem;
+    padding: 3rem;
+}
+//memu
+.l-header__navcontainer{
+
+}
+//items
+.c-nav__list{
+    margin: 0;
+    padding:0 3rem;
+}
+.c-nav__item{
+    font-size:var(--font-size-s);
+    text-transform:var(--uc);
+    &:hover{
+        font-weight: var(--fw);
+    }
+}
