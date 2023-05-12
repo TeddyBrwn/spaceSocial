@@ -1,10 +1,7 @@
 import { useState, useRef } from "react";
 import classNames from "classnames/bind";
 import styles from "./Search.module.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import {} from "@fortawesome/free-regular-svg-icons";
-import Popin from "../Popin";
 
 const cx = classNames.bind(styles);
 
@@ -20,11 +17,6 @@ function Search() {
   return (
     <div>
       <div className={cx("c-popin-header")}>
-        <button className={cx("close-Popin")}>
-          <i>
-            <FontAwesomeIcon icon={faXmark} />
-          </i>
-        </button>
         <form role="search" method="get">
           <div className={cx("c-topsearch--popin__result")}>
             <input

@@ -2,9 +2,12 @@ import { useState } from "react";
 import classNames from "classnames/bind";
 import styles from "./L_site_aside.module.scss";
 import {} from "@fortawesome/free-regular-svg-icons";
-import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { faMagnifyingGlass, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Popin from "../Popin";
+// import Popin from "../Popin";
+import Search from "../Search";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
 const cx = classNames.bind(styles);
 function L_site_aside() {
@@ -30,7 +33,25 @@ function L_site_aside() {
           </div>
         </div>
       </div>
-      {open && <Popin />}
+      {open && (
+        <div className={cx("l-header-aside--poping")}>
+          <div
+            onClick={() => setOpen(false)}
+            className={cx("c-popin_overlay")}
+          ></div>
+          <div className={cx("c-popin_container")}>
+            <button
+              onClick={() => setOpen(false)}
+              className={cx("close-Popin")}
+            >
+              <i>
+                <FontAwesomeIcon icon={faXmark} />
+              </i>
+            </button>
+            <Search />
+          </div>
+        </div>
+      )}
     </div>
   );
 }

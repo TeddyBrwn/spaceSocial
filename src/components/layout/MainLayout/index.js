@@ -2,7 +2,6 @@ import classNames from "classnames/bind";
 import styles from "./MainLayout.module.scss";
 import L_site from "~/components/layout/components/L_site";
 import L_site_aside from "~/components/layout/components/L_site_aside";
-import Popin from "~/components/layout/components/Popin";
 
 const cx = classNames.bind(styles);
 
